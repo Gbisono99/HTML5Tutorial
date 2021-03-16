@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html> <!--HTML container tag-->
     <head> <!-- Head container tag-->
-        <title> <!-- Title container tag-->
-            Test Website <!--Appears on the tab of the website-->
+        <title>
+            Videos
         </title>
     </head>
     <body> <!-- Body container tag. Used for content-->
-        Test Test Test
+        <main>
+            <!--
+                The video tag is used to add a video to a webpage.
+                The src attribute is required and specifies the URL of the video file.
+                For more information about the video tag: https://www.w3schools.com/tags/tag_video.asp 
+            -->
+            <h2>This video is stored locally.</h2>
+            <video src="./videos/2021-03-11 02-43-38.mp4" poster = "./images/91_Discord_logo_logos-512.webp"controls height="500">The text inside the video tag is what shows up if the video can't be rendered by the user's browser.</video>
+            <h2>This video is stored on Youtube.</h2>
+            <!--The iframe tag details will be discussed in iFrame branch.-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M_vEI64hbso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </main>
     </body> 
 </html>
